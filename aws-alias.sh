@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#This file has been modified from the original file found here: https://github.com/fastai/courses/blob/master/setup/aws-alias.sh
+
 alias aws-get-g2='export instanceId=`aws ec2 describe-instances --filters "Name=instance-state-name,Values=stopped,Name=instance-type,Values=g2.2xlarge" --query "Reservations[0].Instances[0].InstanceId"` && echo $instanceId'
 alias aws-start='aws ec2 start-instances --instance-ids $instanceId && aws ec2 wait instance-running --instance-ids $instanceId && export instanceIp=`aws ec2 describe-instances --filters "Name=instance-id,Values=$instanceId" --query "Reservations[0].Instances[0].PublicIpAddress"` && echo $instanceIp'
 alias aws-ip='export instanceIp=`aws ec2 describe-instances --filters "Name=instance-id,Values=$instanceId" --query "Reservations[0].Instances[0].PublicIpAddress"` && echo $instanceIp'
