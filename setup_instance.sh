@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# This script should be invoked via setup_t2.sh or setup_p2.sh; those scripts
+# This script should be invoked via setup_g2.sh; that script
 # will export the right environment variables for this to succeed.
 
 # uncomment for debugging
