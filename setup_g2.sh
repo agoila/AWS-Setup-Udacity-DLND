@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# Configure a p2.xlarge instance
+# Configure a g2.2xlarge instance
 
-# get the correct ami
+# get the correct udacity-dl ami
 export region=$(aws configure get region)
 if [ $region = "us-west-1" ]; then
    export ami="ami-3a603b5a" # California
