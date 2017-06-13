@@ -1,4 +1,5 @@
 # AWS Instance setup for Udacity DLND
+### Work in progress!!!
 Credits for this go to http://course.fast.ai/ for creating the initial AWS setup scripts. I merely modified them for use with Udacity-DL AMIs for g2.2xlarge instances. 
 
 This page provides instructions for setting up your g2.2xlarge AWS instance for Udacity DLND.
